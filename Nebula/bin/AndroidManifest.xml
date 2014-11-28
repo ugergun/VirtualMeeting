@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phoenix"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/commi"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.phoenix.MainActivity"
+            
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppPage"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="view.holder.AppPage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageChooser"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="view.holder.choose" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GroupStep"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/app_name">
+            
+        </activity>
+         <activity
+            android:name=".Sender"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="view.holder.sender" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Receiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="view.holder.receiver" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".Scheduler"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="view.holder.scheduler" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JoinGroup"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>

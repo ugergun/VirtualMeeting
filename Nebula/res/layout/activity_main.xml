@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ScrollView
+        android:id="@+id/svScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0" >
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="260dp"
+                    android:layout_height="330dp"
+                    android:src="@drawable/business" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button"
+                    android:text="Kayıt Ol"
+                    android:textColor="#003366" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:text="Giriş Yap"
+                    android:textColor="#003366" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
